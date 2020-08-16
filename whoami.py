@@ -17,9 +17,9 @@ uvloop.install()
 import static_config
 
 
-DISCORD_CLIENT_ID = os.environ["DISCORD_CLIENT_ID"]
-DISCORD_CLIENT_SECRET = os.environ["DISCORD_CLIENT_SECRET"]
 DISCORD_CLIENT_TOKEN = os.environ["DISCORD_CLIENT_TOKEN"]
+
+RANDOM = random.Random()
 
 
 class Bot:
@@ -89,7 +89,7 @@ Example: `i-am! Laura she`
             f"Hi, {name}! Have fun with these sentences:"
         ]
         for choices in sentences:
-            to_print = random.choice(choices)
+            to_print = RANDOM.choice(choices)
             lines.append("> " + to_print.format(**values))
         await message.channel.send("\n".join(lines))
             

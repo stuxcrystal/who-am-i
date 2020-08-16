@@ -43,19 +43,21 @@ KNOWN_FORMS = [
 
 # _t means capitalized first letter.
 SUBJECT_SENTENCES = [
-    "{name} went to the grocery store. {subject_t} ran out of food."
+    "{name} went to the grocery store. {subject_t} ran out of food.",
+    "Does someone know where {name} is? {subject_t} didn't show up today."
 ]
 
 OBJECT_SENTENCES = [
-    "I wanted to go with {object}."
+    "I wanted to go with {object}.",
+    "Someone brought {object} the pencils."
 ]
 
 POSSESSIVE_DETERMINER_SENTENCES = [
-    "That's {possessive_determiner} pen!"
+    "That's {possessive_determiner} pen!",
 ]
 
 POSSESSIVE_SENTENCES = [
-    "I think it was {possessive}"
+    "I think it was {possessive}."
 ]
 
 REFLEXIVE_SENTENCES = [
