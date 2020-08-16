@@ -86,7 +86,7 @@ Example: `i-am! Laura she`
             static_config.REFLEXIVE_SENTENCES
         )
         lines = [
-            f"Hi, {name}! Have fun with these sentences:"
+            f"Hi, {name}! Are they talking about you?"
         ]
         for choices in sentences:
             to_print = RANDOM.choice(choices)
